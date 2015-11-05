@@ -2,9 +2,9 @@ body {
   font-family:"Lato",sans-serif;
   margin:auto;
   text-align:center;
-  
+  background-color: #111;
   background-image:url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*4nsOUmIMHNgKMCZW5fJJyA.jpeg);
-  background-size: 1920px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .introduction {
