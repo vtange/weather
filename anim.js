@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
           success : function(parsed_json) {
               var location = parsed_json['current_observation']['display_location']['full'];
               var temp_f = parsed_json['current_observation']['temp_f'];
+              var temp_c = parsed_json['current_observation']['temp_c'];
               var clouds = parsed_json['current_observation']['weather'];
               var icon = parsed_json['current_observation']['icon_url'];
               var wind_spd = parsed_json['current_observation']['wind_mph'];
@@ -19,9 +20,21 @@ jQuery(document).ready(function($) {
               $("#wind_dir").html(wind_dir);
           }
   });
-});
+})
 
-}
+
+    $('.swap').click(function(){
+        var current = $("#temperature").html();
+        if(current.includes("F") == true){
+            console.log("switch to C");
+            $("#temperature").html(temp_c + "&deg;C");
+        }
+        else{
+            $("#temperature").html(temp_f + "&deg;F");
+        }
+    }
+
+)};
                           
                           
 $(document).ready(main);
