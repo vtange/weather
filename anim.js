@@ -27,7 +27,7 @@ var main = function($) {
               $("#wind_dir").html(wind_dir);
               if(6 < hours[1] && hours[1] < 18){
                   switch(weather){
-                      case "Clear":document.querySelector("body").style.backgroundImage = "url('http://7-themes.com/data_images/out/13/6812493-sunflower-field-wallpaper.jpg')";break;
+                      case "Clear":document.querySelector("body").style.backgroundImage = "url('http://orig03.deviantart.net/3263/f/2009/257/b/9/sunflower_field_by_mxmbulat.jpg')";break;
                       case "Rain":document.querySelector("body").style.backgroundImage = "url('http://images4.alphacoders.com/831/83196.jpg')";break;
                       case "Snow":document.querySelector("body").style.backgroundImage = "url('http://www.pageresource.com/wallpapers/wallpaper/comments-for-cousy-house-in-snowy-mountains.jpg')";break;
                       case "Thunderstorms":document.querySelector("body").style.backgroundImage = "url('http://www.mrwallpaper.com/wallpapers/thunderstorm.jpg')";break;
